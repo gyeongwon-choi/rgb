@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# 요청이 실제 파일이나 디렉토리가 아니면 index.php로 넘김
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
+AddDefaultCharset UTF-8

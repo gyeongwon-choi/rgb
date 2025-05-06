@@ -1,0 +1,332 @@
+@media (max-width:767px) {
+  .c-header {
+    &__inner {}
+    &__left {}
+    &__logo {}
+    &__languages {}
+    &__language {}
+    &__languageLink {}
+  }
+  
+  .c-headerNav {
+    &__menuBox {}
+    &__menu {}
+    &__menuLink {}
+  }
+  
+  .c-footer {
+    &__inner {}
+    &__left {}
+    &__right {}
+  
+    &__copyBox {}
+    &__pluxity {}
+    &__copy {}
+    
+    &__addressBox {}
+    &__address {}
+    &__contacts {}
+    &__contact {}
+  
+    &__infoBox {}
+    &__info {}
+    &__infoLink {}
+  
+    &__inquiryBox {}
+    &__inquiryText {}
+    &__inquiryBtn {}
+  
+    &__brandMedia {}
+    &__brand {}
+    &__brandMediaTitle {}
+    &__brands {}
+    &__brandGolf {}
+    &__brandSafers {}
+  
+    &__media {}
+    &__medias {}
+    &__mediaYoutube {}
+    &__mediaLinkedIn {}
+  }
+  
+  .c-fixBtns {
+    &__list {}
+    &__btnMessage {}
+    &__btnMail {}
+    &__btnUp {}
+  }
+  
+  .c-modals {}
+  
+  .c-modal {
+    &__closeBtn {}
+    &__inner {}
+    &__title {}
+    &__desc {}
+    &__listBox {}
+    &__1depthBox {}
+    &__1depthList {}
+    &__2depthBox {}
+    &__2depthList {}
+  }
+  
+  .c-main {
+  
+  }
+  
+  .c-subHead {
+    &__title {}
+    &__desc {}
+    &__ps {}
+  }
+  
+  .c-inquiryForm {
+    &__title {}
+    &__tabBox {}
+    &__tabList {}
+    &__tabLabel {
+      & > em {}
+    }
+    &__tabRadio {}
+  
+    &__rows {}
+    &__row {}
+    &__label {}
+    &__required {}
+    &__input {}
+  
+    &__checkItems {}
+    &__checkList {}
+    &__checkLink {}
+    &__btnSubmitWrap {}
+    &__btnSubmit {}
+  }
+  
+  .c-newsDetail {
+    &__title {}
+    &__infoBox {}
+    &__category {}
+    &__date {}
+    
+    &__contents {}
+    &__links {}
+    &__linkWrap {}
+    &__link {
+      &--prev {}
+      &--next {}
+    }
+    &__linkInfo {
+      &--nothing {}
+    }
+  }
+  
+  .c-newsList {
+    &__listBox {}
+  }
+  
+  .c-newsListItem {
+    &__contentWrap {}
+    &__thumbWrap {}
+    &__thumbImage {}
+    &__contents {}
+    &__category {}
+    &__title {}
+    &__desc {}
+    &__date {}
+    &__linkWrap {}
+    &__link {}
+  }
+  
+  .c-paging {
+    &__list {
+      &--first {}
+      &--last {}
+    }
+    &__btn {
+      &--prev {}
+      &--next {}
+    }
+  }
+  
+  .c-achievementHead {
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-achievement {
+    &__table {}
+    &__headTitle {}
+    &__dataCol1 {}
+    &__dataCol2 {}
+    &__dataCol3 {}
+    &__ {}
+    
+  }
+  
+  .c-achievementBtnWrap {
+    &__btn {}
+  }
+  
+  .c-partners {
+    &__title {}
+    &__slideArea {}
+  }
+  
+  .c-aboutBanner {
+    &__inner {}
+    &__bigLetter {}
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-aboutVision {
+    &__inner {}
+    &__item {}
+    &__itemTitle {}
+  }
+  
+  .c-visionBox {
+    &__imageWrap {}
+    &__image {}
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-aboutTwin {
+    &__title {}
+    &__boxes {}
+  }
+  
+  .c-aboutTwinBox {
+    &__index {}
+    &__imageWrap {}
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-aboutHistory {
+    &__inner {}
+  
+    &__1depthBox {}
+    &__1depthList {}
+    &__1depthTitleBox {}
+    &__1depthTitle {}
+    &__1depthdesc {}
+  
+    &__2depthBox {}
+    &__2depthList {
+      &--point {}
+    }
+    &__2depthTitleBox {}
+    &__2depthTitle {}
+  
+    &__3depthBox {}
+    &__3depthList {
+      &--point {}
+      & > em {}
+      & > b {}
+    }
+  }
+  
+  .c-mainBanner1 {
+    &__texts {}
+    &__title {}
+    &__desc {}
+    &__videoWrap {}
+    &__videoText {}
+    &__image {}
+  }
+  
+  .c-mainAbout {
+    &__inner {}
+    &__about {}
+    &__title {}
+    &__desc1 {}
+    &__desc2 {}
+    &__btnDetail {}
+  
+    &__slideArea {}
+  }
+  
+  .c-mainAboutBox {
+    &__slideArea {}
+    &__imageWrap {}
+    &__image {}
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-mainBanner2 {
+    &__inner {}
+    &__left {}
+    &__right {}
+    &__title {}
+    &__logo {}
+    &__desc {}
+    &__desc1 {}
+    &__desc2 {}
+    &__desc3 {}
+  }
+  
+  .c-mainSmart {
+    &__ {}
+  }
+  
+  .c-mainSmartItem {
+    &__contents {}
+    &__title {}
+    &__desc {}
+    &__btnDetail {}
+    &__titleCol {}
+  }
+  
+  .c-mainCore {
+    &__title {}
+    &__desc {}
+    &__cores {}
+  }
+  
+  .c-mainCoreBox {
+    &__imageWrap {}
+    &__image {}
+    &__texts {}
+    &__title {}
+    &__desc {}
+    &__btnDetail {}
+  }
+  
+  .c-mainNews {
+    &__inner {}
+    &__titleBox {}
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-mainNewsList {
+    &__listBox {}
+    &__list {}
+    &__link {}
+    &__category {}
+    &__contents {}
+    &__btnWrap {}
+    &__btnDetail {}
+  }
+  
+  .c-mainBrand {
+    &__inner {}
+    &__titleBox {}
+    &__title {}
+    &__desc {}
+    &__listBox {}
+  }
+  
+  .c-mainBrandBox {
+    &__link {}
+    &__inner {}
+    &__titleBox {}
+    &__title {}
+    &__logoWrap {}
+    &__logo {}
+    &__go {}
+  }
+}

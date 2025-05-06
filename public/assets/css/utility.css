@@ -1,0 +1,60 @@
+.u-irBlock {
+  overflow: hidden;
+  border: 0;
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+.u-irInlineBlock {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  z-index: -1;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+.u-modalOpened {
+  overflow: hidden;
+}
+
+.l-container {
+  max-width: calc(1580px + 40px);
+  padding: 0px 20px;
+  margin: 0px auto;
+}
+
+.l-headerContainer {
+  max-width: calc(1920px - 60px);
+  padding: 0px 20px;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.u-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.u-ellipsis2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.u-ellipsis3 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}

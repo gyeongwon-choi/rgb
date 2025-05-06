@@ -1,0 +1,28 @@
+CREATE DATABASE IF NOT EXISTS rgb CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+USE rgb;
+CREATE TABLE IF NOT EXISTS news (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    category VARCHAR(100) NOT NULL,
+    date DATE NOT NULL,
+    content TEXT NOT NULL
+);
+
+USE rgb;
+CREATE TABLE IF NOT EXISTS inquiry (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    inquiryType VARCHAR(100) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(50) NOT NULL,
+    company VARCHAR(255),
+    title VARCHAR(100) NOT NULL,
+    content TEXT,
+    infoAgree TINYINT(1) NOT NULL,
+    snsAgree TINYINT(1)
+);
+
+CREATE USER 'rgb'@'localhost' IDENTIFIED BY 'rgb1234';
+GRANT ALL PRIVILEGES ON rgb.* TO 'rgb'@'localhost';
+FLUSH PRIVILEGES;

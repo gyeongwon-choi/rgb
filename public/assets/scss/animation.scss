@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@keyframes dropArrow {
+  0% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+}
+@keyframes rightArrow {
+  0% {
+    transform: translateX(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.3;
+  }
+}
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.95);
+  }
+  25% {
+    opacity: 0.6;
+    transform: scale(0.975);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 0.6;
+    transform: scale(0.975);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.95);
+  }
+}
+@keyframes fadeOutIn {
+  0% {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  25% {
+    opacity: 0.6;
+    transform: scale(0.975);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 0.6;
+    transform: scale(0.975);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+}
+@keyframes circle1Fade {
+  0%    { opacity: 1.0; }
+  5%    { opacity: 0.85; }
+  10%   { opacity: 0.7; }
+  15%   { opacity: 0.6; }
+  20%   { opacity: 0.5; }
+  25%   { opacity: 0.45; }
+  30%   { opacity: 0.4; }
+  35%   { opacity: 0.3; }
+  40%   { opacity: 0.2; }
+  45%   { opacity: 0.15; }
+  50%   { opacity: 0.12; }
+  55%   { opacity: 0.1; }
+  60%   { opacity: 0.1; }
+  65%   { opacity: 0.12; }
+  70%   { opacity: 0.18; }
+  75%   { opacity: 0.3; }
+  80%   { opacity: 0.5; }
+  90%   { opacity: 0.75; }
+  100%  { opacity: 1.0; }
+}
+
+@keyframes circle2Fade {
+  0%    { opacity: 0.1; }
+  5%    { opacity: 0.3; }
+  10%   { opacity: 0.5; }
+  15%   { opacity: 0.7; }
+  20%   { opacity: 1.0; }
+  25%   { opacity: 0.85; }
+  30%   { opacity: 0.75; }
+  35%   { opacity: 0.6; }
+  40%   { opacity: 0.5; }
+  45%   { opacity: 0.4; }
+  50%   { opacity: 0.3; }
+  55%   { opacity: 0.25; }
+  60%   { opacity: 0.2; }
+  65%   { opacity: 0.18; }
+  70%   { opacity: 0.15; }
+  75%   { opacity: 0.12; }
+  80%   { opacity: 0.1; }
+  90%   { opacity: 0.1; }
+  100%  { opacity: 0.1; }
+}
+
+@keyframes circle3Fade {
+  0%    { opacity: 0.1; }
+  5%    { opacity: 0.1; }
+  10%   { opacity: 0.15; }
+  15%   { opacity: 0.2; }
+  20%   { opacity: 0.3; }
+  25%   { opacity: 0.4; }
+  30%   { opacity: 0.5; }
+  35%   { opacity: 0.6; }
+  40%   { opacity: 0.7; }
+  45%   { opacity: 0.8; }
+  50%   { opacity: 1.0; }
+  55%   { opacity: 0.9; }
+  60%   { opacity: 0.8; }
+  65%   { opacity: 0.7; }
+  70%   { opacity: 0.6; }
+  75%   { opacity: 0.5; }
+  80%   { opacity: 0.4; }
+  85%   { opacity: 0.3; }
+  90%   { opacity: 0.2; }
+  100%  { opacity: 0.1; }
+}
+
+@keyframes circle4Fade {
+  0%    { opacity: 0.2; }
+  5%    { opacity: 0.2; }
+  10%   { opacity: 0.18; }
+  15%   { opacity: 0.15; }
+  20%   { opacity: 0.12; }
+  25%   { opacity: 0.1; }
+  30%   { opacity: 0.1; }
+  35%   { opacity: 0.15; }
+  40%   { opacity: 0.2; }
+  45%   { opacity: 0.3; }
+  50%   { opacity: 0.5; }
+  55%   { opacity: 0.6; }
+  60%   { opacity: 0.7; }
+  65%   { opacity: 0.8; }
+  70%   { opacity: 0.9; }
+  75%   { opacity: 1.0; }
+  80%   { opacity: 0.9; }
+  85%   { opacity: 0.8; }
+  90%   { opacity: 0.7; }
+  100%  { opacity: 0.5; }
+}
+
+@keyframes circle5Fade {
+  0%    { opacity: 0.5; }
+  5%    { opacity: 0.4; }
+  10%   { opacity: 0.35; }
+  15%   { opacity: 0.3; }
+  20%   { opacity: 0.25; }
+  25%   { opacity: 0.2; }
+  30%   { opacity: 0.15; }
+  35%   { opacity: 0.12; }
+  40%   { opacity: 0.1; }
+  45%   { opacity: 0.1; }
+  50%   { opacity: 0.12; }
+  55%   { opacity: 0.2; }
+  60%   { opacity: 0.3; }
+  65%   { opacity: 0.4; }
+  70%   { opacity: 0.5; }
+  75%   { opacity: 0.7; }
+  80%   { opacity: 0.8; }
+  85%   { opacity: 0.9; }
+  90%   { opacity: 1.0; }
+  100%  { opacity: 0.5; }
+}
