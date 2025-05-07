@@ -17,6 +17,7 @@
     
     <script defer="defer" src="/assets/js/modal.js"></script>
     <script defer="defer" src="/assets/js/scrollTo.js"></script>
+    <script defer="defer" src="/assets/js/menu.js"></script>
     
   </head>
   <body>
@@ -30,7 +31,7 @@
                 <div class="u-irBlock">PLUXITY</div>
               </h1>
             </a>
-            <nav class="c-headerNav">
+            <nav class="c-headerNav" data-menu-target="menu">
               <ul class="c-headerNav__menuBox">
                 <li class="c-headerNav__menu">
                   <a class="c-headerNav__menuLink" href="/about">
@@ -38,7 +39,7 @@
                   </a>
                   <ul class="c-headerNav__menuBox2">
                     <li class="c-headerNav__menu2">
-                      <a class="c-headerNav__menuLink2" href="javascript:void(0);">
+                      <a class="c-headerNav__menuLink2" href="/about">
                         Who we are
                       </a>
                     </li>
@@ -160,6 +161,18 @@
                   </ul>
                 </li>
               </ul>
+              <ul class="c-header__languages">
+                <li class="c-header__language">
+                  <a class="c-header__languageLink c-header__languageLink--active" href="javascript:void(0);">
+                    KR
+                  </a>
+                </li>
+                <li class="c-header__language">
+                  <a class="c-header__languageLink" href="javascript:void(0);">
+                    EN
+                  </a>
+                </li>
+              </ul>
               <div class="c-headerNav__logos">
                 <div class="c-headerNav__logoBox">
                   <div class="c-headerNav__logoWrap">
@@ -179,18 +192,10 @@
               </div>
             </nav>
           </div>
-          <ul class="c-header__languages">
-            <li class="c-header__language">
-              <a class="c-header__languageLink c-header__languageLink--active" href="javascript:void(0);">
-                KR
-              </a>
-            </li>
-            <li class="c-header__language">
-              <a class="c-header__languageLink" href="javascript:void(0);">
-                EN
-              </a>
-            </li>
-          </ul>
+          
+          <button type="button" class="c-header__btnMobileMenu" data-menu-trigger="menu">
+            <span class="u-irInlineBlock">모바일 햄버거 버튼</span>
+          </button>
         </div>
       </div>
     </header>

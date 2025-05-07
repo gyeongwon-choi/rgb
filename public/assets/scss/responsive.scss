@@ -2,6 +2,9 @@
   .c-mainBanner1 {
     min-height: 773px;
     max-height: 773px;
+    &__textsTop {
+      gap: 60px;
+    }
     &__texts1 {
       height: 200px;
     }
@@ -22,128 +25,89 @@
         margin-top: -1250px;
       }
     }
-    &__desc {}
-    &__videoWrap {}
-    &__videoText {}
-    &__image {}
   }
-  
-  .c-mainAbout {
-    &__inner {}
-    &__about {}
-    &__title {}
-    &__desc1 {}
-    &__desc2 {}
-    &__btnDetail {}
-  
-    &__slideArea {}
-  }
-  
-  .c-mainAboutBox {
-    width: 300px;
-    min-height: 327px;
-    &__slideArea {}
-    &__imageWrap {}
-    &__image {}
-    &__title {}
-    &__desc {}
-  }
-  
-  .c-mainBanner2 {
-    &__inner {
-      padding-left: 0;
-      justify-content: center;
+  .c-headerNav {
+    &__logos {
+      right: auto;
+      left: 20px;
+      max-width: 200px;
     }
-    &__left {}
-    &__right {}
-    &__title {}
-    &__logo {}
-    &__desc {}
-    &__desc1 {}
-    &__desc2 {}
-    &__desc3 {}
-  }
-  
-  .c-mainSmart {
-    &__ {}
-  }
-  
-  .c-mainSmartItem {
-    &__contents {}
-    &__title {}
-    &__desc {}
-    &__btnDetail {}
-    &__titleCol {}
-  }
-  
-  .c-mainCore {
-    &__title {}
-    &__desc {}
-    &__cores {}
-  }
-  
-  .c-mainCoreBox {
-    &__imageWrap {}
-    &__image {}
-    &__texts {}
-    &__title {}
-    &__desc {}
-    &__btnDetail {}
-  }
-  
-  .c-mainNews {
-    &__inner {}
-    &__titleBox {}
-    &__title {}
-    &__desc {}
-  }
-  
-  .c-mainNewsList {
-    &__listBox {}
-    &__list {}
-    &__link {}
-    &__category {}
-    &__contents {}
-    &__btnWrap {}
-    &__btnDetail {}
-  }
-  
-  .c-mainBrand {
-    &__inner {}
-    &__titleBox {}
-    &__title {}
-    &__desc {}
-    &__listBox {}
-  }
-  
-  .c-mainBrandBox {
-    &__link {}
-    &__inner {}
-    &__titleBox {}
-    &__title {}
-    &__logoWrap {}
-    &__logo {}
-    &__go {}
   }
 }
 
 @media (max-width:1023px) {
   .c-header {
+    &__btnMobileMenu {
+      display: block;
+    }
     &__inner {
       height: 60px;
     }
-    &__left {}
     &__logo {}
-    &__languages {}
+    &__languages {
+      display: none;
+    }
     &__language {}
     &__languageLink {}
+    &__left {
+    }
+  }
+
+  .u-menuOpened {
+    .c-header__left {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 0px;
+    }
+    .c-headerNav__logos {
+      left: 20px;
+      bottom: 20px;
+      position: fixed;
+      top: auto;
+    }
   }
   
   .c-headerNav {
     display: none;
-    &__menuBox {}
-    &__menu {}
+    &.active {
+      display: block;
+      width: calc(100% + 40px);
+      .c-headerNav__backdrop {
+        width: 100%;
+        height: 100vh;
+      }
+    }
+    &__menuBox2 {
+      visibility: visible;
+      opacity: 1;
+      position: static;
+      gap: 10px;
+    }
+    &__menuBox {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: none;
+      height: auto;
+      gap: 10px;
+      max-height: 300px;
+      overflow: auto;
+    }
+    &__menu {
+      max-width: none;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+      text-align: left;
+      &::after {
+        display: none;
+      }
+    }
     &__menuLink {}
+    &__logos {
+      visibility: visible;
+      opacity: 1;
+    }
+    
   }
   
   .c-footer {
@@ -553,26 +517,105 @@
   }
   
   .c-mainBanner1 {
-    &__texts {}
-    &__title {}
-    &__desc {}
+    min-height: 374px;
+    max-height: 374px;
+    &__texts1 {
+      display: none;
+    }
+    &__textTop {
+      gap: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__textBottom {
+      margin-top: 10px;
+    }
+    &__title1 {
+      font-size: 40px;
+    }
+    &__title2 {
+      font-size: 40px;
+      &::before {
+        width: calc(100% - 200px);
+        height: 4px;
+        top: 24px;
+      }
+      &--video {
+        color: #fff;
+      }
+    }
+    &__video {
+      height: 374px;
+    }
+    &__textsInner {
+      &--video {
+        margin-top: 0px;
+        transform: none !important;
+      }
+    }
+    &__texts {
+      top: 60px;
+      width: 100%;
+    }
+    &__desc {
+      &--video {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
     &__videoWrap {}
     &__videoText {}
     &__image {}
   }
   
   .c-mainAbout {
-    &__inner {}
-    &__about {}
+    padding: 80px 0px;
+    max-height: none;
+    &__inner {
+      grid-template-columns: 1fr;
+      min-height: auto;
+      gap: 60px;
+    }
+    &__about {
+      margin-top: 0px;
+    }
+    &__cols {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__col {
+      transform: none !important;
+      gap: 20px;
+    }
     &__title {}
-    &__desc1 {}
-    &__desc2 {}
-    &__btnDetail {}
+    &__desc1 {
+      font-size: 40px;
+      line-height: 1.4;
+    }
+    &__desc2 {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    &__btnDetail {
+      margin-top: 40px;
+    }
   
     &__slideArea {}
   }
   
   .c-mainAboutBox {
+    width: 100%;
+    min-height: 240px;
+    align-items: center;
+    padding: 30px 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.16);
+    &__texts {
+      width: 100%;
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
     &__slideArea {}
     &__imageWrap {}
     &__image {}
@@ -581,19 +624,39 @@
   }
   
   .c-mainBanner2 {
-    &__inner {}
+    &__effectBox {
+      display: none;
+    }
+    &__inner {
+      padding-top: 0px;
+      padding-left: 0px;
+      gap: 10px;
+      max-height: none;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
     &__left {}
-    &__right {}
+    &__right {
+      font-size: 30px;
+      max-width: 440px;
+      top: auto;
+      transform: none !important;
+    }
     &__title {}
-    &__logo {}
+    &__logo {
+      width: 100%;
+      max-width: 351px;
+    }
     &__desc {}
     &__desc1 {}
     &__desc2 {}
     &__desc3 {}
   }
-  
+
   .c-mainSmart {
-    &__ {}
+    padding: 80px 0px;
   }
   
   .c-mainSmartItem {
@@ -605,28 +668,54 @@
   }
   
   .c-mainCore {
+    padding: 80px 0px 80px;
+    min-height: auto;
     &__title {}
-    &__desc {}
-    &__cores {}
+    &__desc {
+      margin-top: 20px;
+      font-size: 40px;
+    }
+    &__cores {
+      position: static;
+      transform: none;
+      width: 100%;
+      margin-top: 40px;
+    }
   }
   
   .c-mainCoreBox {
+    &__inner {
+      min-height: 575px;
+    }
     &__imageWrap {}
     &__image {}
     &__texts {}
     &__title {}
-    &__desc {}
+    &__desc {
+      font-size: 18px;
+      line-height: 1.4;
+    }
     &__btnDetail {}
   }
   
   .c-mainNews {
-    &__inner {}
+    padding: 80px 0px 40px;
+    &__inner {
+      flex-direction: column;
+    }
     &__titleBox {}
     &__title {}
-    &__desc {}
+    &__desc {
+      margin-top: 20px;
+      font-size: 40px;
+      br {
+        display: none;
+      }
+    }
   }
   
   .c-mainNewsList {
+    padding-top: 40px;
     &__listBox {}
     &__list {}
     &__link {}
@@ -637,11 +726,23 @@
   }
   
   .c-mainBrand {
-    &__inner {}
+    padding: 40px 0px 160px;
+    &__inner {
+      flex-direction: column;
+    }
     &__titleBox {}
     &__title {}
-    &__desc {}
-    &__listBox {}
+    &__desc {
+      font-size: 40px;
+      margin-top: 20px;
+      br {
+        display: none;
+      }
+    }
+    &__listBox {
+      margin-top: 20px;
+      gap: 20px;
+    }
   }
   
   .c-mainBrandBox {
@@ -733,10 +834,24 @@
   }
   
   .c-fixBtns {
+    right: 20px;
+    bottom: 20px;
     &__list {}
-    &__btnMessage {}
-    &__btnMail {}
-    &__btnUp {}
+    &__btnMessage {
+      width: 40px;
+      height: 40px;
+      background-size: 24px auto;
+    }
+    &__btnMail {
+      width: 40px;
+      height: 40px;
+      background-size: 24px auto;
+    }
+    &__btnUp {
+      width: 40px;
+      height: 40px;
+      background-size: 12px auto;
+    }
   }
   
   .c-modals {}
@@ -1014,8 +1129,26 @@
   }
   
   .c-mainBanner1 {
-    &__texts {}
-    &__title {}
+  /*   min-height: 376px;
+    max-height: 376px; */
+    &__textsInner {
+      &--video {
+      
+      }
+    }
+    &__texts1 {
+      /* display: none; */
+    }
+    &__texts {
+      /* top: 60px; */
+    }
+    &__title2 {
+      &::before {
+        /* width: 71%;
+        height: 4px;
+        top: 24px; */
+      }
+    }
     &__desc {}
     &__videoWrap {}
     &__videoText {}
@@ -1054,30 +1187,99 @@
   }
   
   .c-mainSmart {
-    &__ {}
+    &__inner {
+      padding: 0px 10px;
+    }
+  
+    .splide__pagination {
+      position: absolute;
+      top: auto;
+      left: 50%;
+      right: auto;
+      bottom: 20px;
+      transform: translate(-50%, 0);
+      gap: 20px;
+    }
+    .splide__pagination li {
+      position: static;
+      display: block !important;
+      &.is-active {
+        .c-mainSmartItem__titleCol {
+          display: block;
+        }
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .splide__slide {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .splide__pagination__page {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid #BDBDBD;
+      background-color: rgba(0, 0, 0, 0.6) !important;
+      &.is-active {
+        background-color: #006EFF !important;
+      }
+      &::after {
+        display: none;
+      }
+    }
   }
   
   .c-mainSmartItem {
-    &__contents {}
-    &__title {}
-    &__desc {}
-    &__btnDetail {}
+    height: 380px;
+    &__contents {
+      padding: 30px 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__title {
+      font-size: 40px;
+    }
+    &__desc {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    &__btnDetail {
+      margin-top: 40px;
+    }
     &__titleCol {}
+    
   }
   
   .c-mainCore {
     &__title {}
     &__desc {}
-    &__cores {}
+    &__cores {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
   
   .c-mainCoreBox {
+    max-width: none;
+    &__inner {
+      padding: 30px 20px 30px;
+      min-height: 405px;
+    }
     &__imageWrap {}
     &__image {}
-    &__texts {}
+    &__texts {
+      margin-top: 20px;
+    }
     &__title {}
     &__desc {}
-    &__btnDetail {}
+    &__btnDetail {
+      margin-top: 20px;
+    }
   }
   
   .c-mainNews {
@@ -1091,8 +1293,19 @@
     &__listBox {}
     &__list {}
     &__link {}
-    &__category {}
-    &__contents {}
+    &__category {
+      font-size: 20px;
+    }
+    &__contents {
+      font-size: 18px;
+      padding-right: 25px;
+      &::after {
+        width: 18px;
+        height: 18px;
+        right: 0px;
+        top: 1px;
+      }
+    }
     &__btnWrap {}
     &__btnDetail {}
   }
@@ -1102,12 +1315,17 @@
     &__titleBox {}
     &__title {}
     &__desc {}
-    &__listBox {}
+    &__listBox {
+      flex-direction: column;
+    }
   }
   
   .c-mainBrandBox {
     &__link {}
-    &__inner {}
+    &__inner {
+      flex-wrap: wrap;
+      align-items: center;
+    }
     &__titleBox {}
     &__title {}
     &__logoWrap {}

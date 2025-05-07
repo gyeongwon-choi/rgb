@@ -6,7 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
       pagination: true,
       arrows: false,
       autoScroll: false,
-      drag:false
+      drag:false,
+      breakpoints: {
+        767: {
+          drag:true,
+        },
+      }
     });
 
     mainPcSplide.on("ready", function() {

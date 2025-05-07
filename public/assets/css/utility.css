@@ -24,6 +24,9 @@
 .u-modalOpened {
   overflow: hidden;
 }
+.u-menuOpened {
+  overflow: hidden;
+}
 
 .l-container {
   max-width: calc(1580px + 40px);

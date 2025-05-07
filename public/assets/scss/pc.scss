@@ -8,6 +8,19 @@
   right: 0;
   z-index: 10;
   background-color: #fff;
+  &__btnMobileMenu {
+    display: none;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/icons/icon_mobileMenu.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &.active {
+      background-image: url("../images/icons/icon_closeModal.svg");
+    }
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -16,11 +29,10 @@
   }
   &__left {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1010px;
     width: 100%;
     height: 100%;
+    gap: 50px;
   }
   &__logo {
     width: 200px;
@@ -83,9 +95,10 @@
 }
 
 .c-headerNav {
-  max-width: 760px;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
   &__menuBox {
     display: flex;
     align-items: center;
@@ -1802,18 +1815,17 @@
 
 .c-mainBanner1 {
   position: relative;
-  min-height: 992px;
   max-height: 992px;
   overflow: hidden;
   &__textsInner {
-    margin-top: -400px;
+    margin-top: -730px;
     &--video {
-      margin-top: -760px;
+      margin-top: -1000px;
     }
   }
   &__texts1 {
     background-color: rgba(240,240,240,.5);
-    height: 352px;
+    height: calc(352px - 88px);
     position: relative;
     overflow: hidden;
   }
@@ -1987,7 +1999,7 @@
   background-position: center center;
   position: relative;
 
-  .c-mainBanner2__effectBox {
+  &__effectBox {
     overflow: hidden;
     position: absolute;
     left: 0px;
@@ -1996,7 +2008,7 @@
     bottom: 0px;
     z-index: 1;
   }
-  .c-mainBanner2__effect {
+  &__effect {
     background-color: #445262;
     width: 100%;
     height: 100%;
@@ -2005,6 +2017,7 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
+    filter: blur(195px);
   }
   &__inner {
     max-height: 512px;
@@ -2055,6 +2068,7 @@
     padding: 0px 10px;
   }
 
+
   .splide__pagination {
     position: absolute;
     top: 0;
@@ -2065,6 +2079,11 @@
   .splide__pagination li {
     position: absolute;
     height: calc(100% - 60px);
+    &.is-active {
+      .c-mainSmartItem__titleCol {
+        display: block;
+      }
+    }
     &:nth-of-type(1) {
       .splide__pagination__page {
         background-color: #006EFF;
@@ -2110,9 +2129,6 @@
       color: #fff;
       transform: rotate(90deg);
       text-wrap-mode: nowrap;
-    }
-    &.is-active {
-      //display: none;
     }
   }
   .splide__slide {
@@ -2167,10 +2183,10 @@
   [data-slide-active="2"] {
     .splide__pagination li {
       &:nth-of-type(1) {
-        left: 0px;
+        left: 66px;
       }
       &:nth-of-type(2) {
-        left: 66px;
+        left: 0px;
       }
       &:nth-of-type(3) {
         left: calc(100% - 132px);
@@ -2184,10 +2200,10 @@
   [data-slide-active="3"] {
     .splide__pagination li {
       &:nth-of-type(1) {
-        left: 0px;
+        left: 66px;
       }
       &:nth-of-type(2) {
-        left: 66px;
+        left: 0px;
       }
       &:nth-of-type(3) {
         left: 132px;
@@ -2213,7 +2229,8 @@
 
 .c-mainSmartItem {
   position: relative;
-  width: 1364px;
+  max-width: 1364px;
+  width: 100%;
   height: 602px;
   &::before {
     content: "";
@@ -2272,6 +2289,7 @@
     background-position: calc(100% - 27px) center;
   }
   &__titleCol {
+    display: none;
     position: absolute;
     right: 0px;
     top: 50%;
