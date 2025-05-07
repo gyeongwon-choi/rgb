@@ -58,7 +58,7 @@
                     플럭시티의<br />
                     <em>디지털 트윈 플랫폼</em>을 만나보세요.
                   </h2>
-                  <a class="c-footer__inquiryBtn" href="javascript:void(0);">
+                  <a class="c-footer__inquiryBtn" href="/inquiry/create">
                     문의하기
                   </a>
                 </div>

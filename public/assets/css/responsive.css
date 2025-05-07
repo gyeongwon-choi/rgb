@@ -1,3 +1,443 @@
-
+@media (max-width: 1499px) {
+  .c-mainBanner1 {
+    min-height: 773px;
+    max-height: 773px;
+  }
+  .c-mainBanner1__texts1 {
+    height: 200px;
+  }
+  .c-mainBanner1__title1 {
+    font-size: 100px;
+  }
+  .c-mainBanner1__title2 {
+    font-size: 100px;
+  }
+  .c-mainBanner1__title2::before {
+    width: 50%;
+    height: 8px;
+    top: 62px;
+  }
+  .c-mainBanner1__textsInner {
+    margin-top: -1050px;
+  }
+  .c-mainBanner1__textsInner--video {
+    margin-top: -1250px;
+  }
+  .c-mainAboutBox {
+    width: 300px;
+    min-height: 327px;
+  }
+  .c-mainBanner2__inner {
+    padding-left: 0;
+    justify-content: center;
+  }
+}
+@media (max-width: 1023px) {
+  .c-header__inner {
+    height: 60px;
+  }
+  .c-headerNav {
+    display: none;
+  }
+  .c-footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .c-footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .c-footer__left {
+    padding-right: 0px;
+    max-width: none;
+    padding-bottom: 20px;
+  }
+  .c-footer__right {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid rgba(112, 112, 112, 0.3);
+    padding-top: 20px;
+    max-width: none;
+  }
+  .c-footer__addressBox {
+    margin-top: 40px;
+  }
+  .c-footer__infoBox {
+    margin-top: 20px;
+  }
+  .c-footer__inquiryBox {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .c-main {
+    padding-top: 60px;
+  }
+  .c-subHead {
+    padding-top: 60px;
+  }
+  .c-subHead__title {
+    font-size: 100px;
+  }
+  .c-form {
+    padding: 40px 20px;
+  }
+  .c-form__title {
+    font-size: 32px;
+  }
+  .c-form__rows {
+    margin-top: 45px;
+    gap: 20px;
+  }
+  .c-form__inputWrap {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .c-form__label {
+    font-size: 18px;
+    padding-top: 0px;
+  }
+  .c-inquiryForm {
+    margin-top: 80px;
+    margin-bottom: 160px;
+    padding: 40px 20px;
+  }
+  .c-inquiryForm__title {
+    font-size: 32px;
+  }
+  .c-inquiryForm__tabBox {
+    margin-top: 45px;
+  }
+  .c-inquiryForm__tabList {
+    width: 50%;
+  }
+  .c-inquiryForm__tabLabel {
+    font-size: 18px;
+  }
+  .c-inquiryForm__rows {
+    margin-top: 45px;
+    gap: 20px;
+  }
+  .c-inquiryForm__row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .c-inquiryForm__label {
+    font-size: 18px;
+    padding-top: 0px;
+  }
+  .c-inquiryForm__checkItems {
+    padding-left: 0px;
+    margin-top: 45px;
+  }
+  .c-newsDetail {
+    margin-top: 80px;
+    margin-bottom: 160px;
+  }
+  .c-newsDetail__title {
+    font-size: 30px;
+    padding-top: 45px;
+  }
+  .c-newsDetail__contents {
+    margin-top: 45px;
+    min-height: 600px;
+  }
+  .c-newsList {
+    margin-top: 80px;
+    margin-bottom: 160px;
+  }
+  .c-newsList .c-paging {
+    top: calc(100% + 60px);
+  }
+  .c-newsListItem__inner {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .c-newsListItem__contentWrap {
+    flex-direction: column;
+  }
+  .c-newsListItem__thumbWrap {
+    width: 100%;
+    padding-bottom: 62.5%;
+  }
+  .c-newsListItem__contents {
+    margin-left: 0px;
+  }
+  .c-achievementHead {
+    margin-top: 80px;
+  }
+  .c-achievementHead__desc {
+    font-size: 30px;
+  }
+  .c-achievementHead__desc br {
+    display: none;
+  }
+  .c-achievement {
+    margin-top: 80px;
+    margin-bottom: 160px;
+  }
+  .c-achievementBtnWrap {
+    top: calc(100% + 65px);
+  }
+  .c-partners {
+    padding: 80px 0px 80px;
+  }
+  .c-partners__title {
+    font-size: 40px;
+  }
+  .c-aboutBanner {
+    min-height: auto;
+  }
+  .c-aboutBanner__inner {
+    padding: 160px 0px 160px;
+  }
+  .c-aboutBanner__bigLetter {
+    font-size: 100px;
+    text-indent: 0px;
+  }
+  .c-aboutBanner__bigLetter::before {
+    right: calc(100% + 50px);
+  }
+  .c-aboutBanner__bigLetter::after {
+    left: calc(100% + 50px);
+  }
+  .c-aboutVision {
+    padding: 80px 0px 80px;
+  }
+  .c-aboutVision__inner {
+    gap: 40px;
+  }
+  .c-aboutVision__item {
+    padding-left: 0px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .c-aboutVision__itemTitle {
+    position: static;
+    font-size: 40px;
+    text-align: center;
+  }
+  .c-visionBox {
+    padding: 30px 20px;
+    max-width: none;
+    min-height: auto;
+  }
+  .c-visionBox__imageWrap {
+    width: 150px;
+    height: 150px;
+  }
+  .c-visionBox__imageWrap--vision {
+    width: 130px;
+    height: 130px;
+  }
+  .c-visionBox__title {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .c-visionBox__desc {
+    font-size: 18px;
+  }
+  .c-aboutTwin__title {
+    font-size: 40px;
+  }
+  .c-aboutTwin__bgText {
+    font-size: 160px;
+  }
+  .c-aboutTwin__boxes {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .c-aboutTwinBox {
+    padding: 30px 20px 30px;
+  }
+  .c-aboutTwinBox:not(:first-of-type):before {
+    left: 50%;
+    bottom: auto;
+    top: -23px;
+    transform: translate(-50%, 0) rotate(90deg);
+  }
+  .c-aboutTwinBox__index {
+    font-size: 20px;
+  }
+  .c-aboutTwinBox__desc {
+    font-size: 18px;
+  }
+  .c-aboutTwinBox__desc br {
+    display: none;
+  }
+  .c-aboutHistory {
+    padding-top: 280px;
+  }
+  .c-aboutHistory__bgCircle {
+    max-width: 600px;
+    max-height: 600px;
+    top: -400px;
+  }
+  .c-aboutHistory__bgLine {
+    top: 200px;
+    height: calc(100% - 200px);
+  }
+  .c-aboutHistory__1depthBox {
+    padding: 0;
+  }
+  .c-aboutHistory__1depthTitle {
+    font-size: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .c-footer__contacts {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .c-footer__contact:nth-of-type(even) {
+    display: none;
+  }
+  .c-footer__inquiryBox {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .c-footer__brandMediaHr {
+    width: 100%;
+    min-height: 1px;
+  }
+  .c-footer__brandMedia {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px;
+    gap: 20px;
+  }
+  .c-footer__brand {
+    max-width: 290px;
+    padding-right: 0px;
+  }
+  .c-footer__media {
+    max-width: 150px;
+    padding-left: 0px;
+  }
+  .c-subHead__title {
+    font-size: 40px;
+  }
+  .c-subHead__desc {
+    font-size: 30px;
+  }
+  .c-subHead__desc br {
+    display: none;
+  }
+  .c-inquiryForm__tabList {
+    width: 100%;
+  }
+  .c-partnersSlide__imageWrap {
+    height: 93px;
+    padding: 20px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.16);
+  }
+  .c-partnersSlide .splide {
+    height: 93px;
+  }
+  .c-partnersSlide .splide__track {
+    height: 125px;
+  }
+  .c-partnersSlide .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .c-partners__slideArea {
+    margin-top: 60px;
+    gap: 20px;
+  }
+  .c-aboutBanner::after {
+    background-attachment: local;
+  }
+  .c-aboutBanner__innerWrap {
+    align-items: center;
+  }
+  .c-aboutBanner__inner {
+    padding: 80px 0px 80px;
+  }
+  .c-aboutBanner__bigLetter {
+    font-size: 40px;
+  }
+  .c-aboutBanner__bigLetter::before {
+    height: 4px;
+    right: calc(100% + 25px);
+  }
+  .c-aboutBanner__bigLetter::after {
+    height: 4px;
+    left: calc(100% + 25px);
+  }
+  .c-aboutBanner__title {
+    font-size: 30px;
+  }
+  .c-aboutBanner__desc {
+    font-size: 18px;
+  }
+  .c-aboutTwin {
+    padding: 80px 0px 80px;
+  }
+  .c-aboutTwin__boxes {
+    margin-top: 40px;
+    transform: none;
+  }
+  .c-aboutTwinBox {
+    min-height: 330px;
+  }
+  .c-aboutTwinBox__imageWrap {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .c-aboutTwinBox__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .c-aboutHistory {
+    padding: 80px 0px 160px;
+  }
+  .c-aboutHistory__bgCircle {
+    display: none;
+  }
+  .c-aboutHistory__bgLine {
+    display: none;
+  }
+  .c-aboutHistory__1depthBox {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .c-aboutHistory__1depthList {
+    grid-template-columns: 1fr;
+  }
+  .c-aboutHistory__1depthTitleBox {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .c-aboutHistory__1depthdesc {
+    line-height: 1.4;
+    margin-top: 0px;
+  }
+  .c-aboutHistory__1depthdesc br {
+    display: none;
+  }
+  .c-aboutHistory__2depthBox {
+    margin-top: 40px;
+    margin-left: 0px;
+    gap: 40px;
+  }
+  .c-aboutHistory__2depthTitle {
+    font-size: 30px;
+  }
+  .c-aboutHistory__3depthBox {
+    margin-top: 20px;
+  }
+  .c-aboutHistory__3depthList {
+    line-height: 1.4;
+  }
+  .c-aboutHistory__3depthList::after {
+    top: 9px;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

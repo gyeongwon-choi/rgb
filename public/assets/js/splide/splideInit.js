@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mainPcSplide.root.setAttribute("data-slide-active",activeIndex);
     });
   }
-  /* our partners & customers slide1 */
+  /* achievements slide1 */
   if (document.querySelector('[data-splide="partners1"] .splide')) {
     const mainPcSplide = new Splide('[data-splide="partners1"] .splide', {
       direction: "rtl",
@@ -51,10 +51,17 @@ document.addEventListener("DOMContentLoaded", function () {
       autoScroll: {
         speed: 0.5,
       },
+      breakpoints: {
+        767: {
+          fixedWidth: "150px",
+          height: "93px",
+          gap: "10px",
+        },
+      }
     });
     mainPcSplide.mount(window.splide.Extensions);
   }
-  /* our partners & customers slide2 */
+  /* achievements slide2 */
   if (document.querySelector('[data-splide="partners2"] .splide')) {
     const mainPcSplide = new Splide('[data-splide="partners2"] .splide', {
       direction: "ltr",
@@ -69,10 +76,17 @@ document.addEventListener("DOMContentLoaded", function () {
       autoScroll: {
         speed: 0.5,
       },
+      breakpoints: {
+        767: {
+          fixedWidth: "150px",
+          height: "93px",
+          gap: "10px",
+        },
+      }
     });
     mainPcSplide.mount(window.splide.Extensions);
   }
-  /* our partners & customers slide3 */
+  /* achievements slide3 */
   if (document.querySelector('[data-splide="partners3"] .splide')) {
     const mainPcSplide = new Splide('[data-splide="partners3"] .splide', {
       direction: "rtl",
@@ -87,6 +101,13 @@ document.addEventListener("DOMContentLoaded", function () {
       autoScroll: {
         speed: 0.5,
       },
+      breakpoints: {
+        767: {
+          fixedWidth: "150px",
+          height: "93px",
+          gap: "10px",
+        },
+      }
     });
     mainPcSplide.mount(window.splide.Extensions);
   }

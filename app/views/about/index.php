@@ -81,6 +81,11 @@
 </section>
 
 <section class="c-aboutTwin">
+  <div class="c-aboutTwin__bgTextWrap">
+    <div class="c-aboutTwin__bgText">
+      Digital Twin
+    </div>
+  </div>
   <div class="l-container">
     <h3 class="c-aboutTwin__title">
       3D 공간정보 전문가에서 <br>

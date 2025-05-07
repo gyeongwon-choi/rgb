@@ -81,6 +81,14 @@ hr {
   border: none;
 }
 
+button {
+  font-family: "NotoSansCJKkr";
+}
+
+label {
+  line-height: 1.4;
+}
+
 input, select, textarea {
   font-family: "NotoSansCJKkr";
   width: 100%;
@@ -112,6 +120,8 @@ input[type=checkbox], input[type=radio] {
   border-radius: 3px;
   border: 1px solid #BFBFBF;
   background-color: #fff;
+  margin: 0;
+  flex-shrink: 0;
 }
 input[type=checkbox]:checked {
   background-image: url("../images/icons/icon_checkbox_check.svg");

@@ -2,7 +2,7 @@
 
 .c-header {
   border-bottom: 1px solid #EAEAEA;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -18,7 +18,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    max-width: 1010px;
+    width: 100%;
     height: 100%;
   }
   &__logo {
@@ -82,11 +83,15 @@
 }
 
 .c-headerNav {
+  max-width: 760px;
+  width: 100%;
   height: 100%;
   &__menuBox {
     display: flex;
     align-items: center;
-    gap: 32px;
+    width: 100%;
+    max-width: 760px;
+    justify-content: space-between;
     height: 100%;
     z-index: 1;
     position: relative;
@@ -200,6 +205,7 @@
   &__left {
     width: 100%;
     max-width: 723px;
+    padding-right: 74px;
   }
   &__right {
     width: 100%;
@@ -210,7 +216,8 @@
 
   &__copyBox {}
   &__pluxity {
-    width: 309px;
+    width: 100%;
+    max-width: 309px;
     height: 48px;
     background-image: url("../images/logos/logo_pluxity.svg");
     background-size: contain;
@@ -330,9 +337,10 @@
     background-color: rgba(112, 112, 112, 0.37);
   }
   &__brand {
-    max-width: 290px;
+    max-width: 310px;
     width: 100%;
     position: relative;
+    padding-right: 20px;
   }
   &__brandMediaTitle {
     font-family: "Roboto";
@@ -346,6 +354,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
   }
   &__brandGolf {
     width: 80px;
@@ -365,14 +375,17 @@
   }
 
   &__media {
-    max-width: 150px;
+    max-width: 170px;
     width: 100%;
+    padding-left: 20px;
   }
   &__medias {
     margin-top: 7px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
   }
   &__mediaYoutube {
     width: 57px;
@@ -574,8 +587,6 @@
 }
 
 .c-form {
-  margin-top: 114px;
-  margin-bottom: 376px;
   padding: 100px 133px;
   background-color: rgba(241,241,241,.5);
   border-radius: 30px;
@@ -597,6 +608,7 @@
   }
   &__inputWrap {
     display: flex;
+    width: 100%;
   }
   &__label {
     width: 133px;
@@ -711,6 +723,7 @@
     margin-top: 90px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   &__tabList {
     width: 33.3333%;
@@ -753,7 +766,6 @@
       }
     }
   }
-
   &__rows {
     margin-top: 60px;
     display: flex;
@@ -779,7 +791,6 @@
     min-height: 319px;
     resize: none;
   }
-
   &__checkItems {
     margin-top: 80px;
     padding-left: 143px;
@@ -789,7 +800,6 @@
   }
   &__checkList {
     display: flex;
-    align-items: center;
     gap: 15px;
   }
   &__check {}
@@ -893,6 +903,7 @@
     align-items: center;
   }
   &__linkWrap {
+    max-width: 130px;
     display: inline-flex;
     flex-direction: column;
     gap: 13px;
@@ -1007,6 +1018,7 @@
     width: 100%;
     margin-left: 45px;
     padding: 19px 0px;
+    min-width: 200px;
   }
   &__category {
     font-family: "Roboto";
@@ -1026,9 +1038,11 @@
     color: #585858;
     line-height: 1.688;
     max-width: 575px;
+    min-height: 54px;
+    word-break: break-word;
   }
   &__date {
-    margin-top: 50px;
+    margin-top: 23px;
     font-size: 16px;
     font-weight: 500;
     color: #AAAAAA;
@@ -1176,14 +1190,19 @@
         font-weight: 500;
         vertical-align: middle;
         text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
         &:nth-of-type(1) {
-          padding: 0px 30px 0px 30px;
+          padding-left: 30px;
+          padding-right: 30px;
         }
         &:nth-of-type(2) {
-          padding: 0px 15px 0px 0px;
+          padding-left: 0px;
+          padding-right: 15px;
         }
         &:nth-of-type(3) {
-          padding: 0px 10px 0px 0px;
+          padding-left: 0px;
+          padding-right: 10px;
           text-align: center;
         }
       }
@@ -1195,20 +1214,25 @@
       }
       td {
         vertical-align: middle;
+        padding-top: 10px;
+        padding-bottom: 10px;
         &:nth-of-type(1) {
-          padding: 0px 30px 0px 30px;
+          padding-left: 30px;
+          padding-right: 30px;
           font-size: 18px;
           font-weight: 700;
           color: #000;
         }
         &:nth-of-type(2) {
-          padding: 0px 15px 0px 0px;
+          padding-left: 0px;
+          padding-right: 15px;
           font-size: 16px;
           font-weight: 400;
           color: #AAAAAA;
         }
         &:nth-of-type(3) {
-          padding: 0px 10px 0px 0px;
+          padding-left: 0px;
+          padding-right: 10px;
           font-size: 18px;
           font-weight: 700;
           color: #DDDDDD;
@@ -1497,8 +1521,15 @@
   position: relative;
   background-color: #111833;
   z-index: 1;
-  &::before {
-    content: "Digital Twin";
+  &__bgTextWrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  &__bgText {
     font-size: 320px;
     font-weight: 700;
     font-family: "Roboto";
@@ -1510,6 +1541,19 @@
     letter-spacing: -3px;
     width: max-content;
   }
+  /* &::before {
+    content: "Digital Twin";
+    font-size: 320px;
+    font-weight: 700;
+    font-family: "Roboto";
+    color: rgba(0,110,255,0.1);
+    position: absolute;
+    top: 107px;
+    left: 50%;
+    transform: translate(-50%,0);
+    letter-spacing: -3px;
+    width: max-content;
+  } */
   &__title {
     text-align: center;
     font-size: 56px;
@@ -1599,9 +1643,11 @@
     top: 0;
   }
   &__bgCircle {
+    max-width: 982px;
+    width: 100%;
+    height: 50%;
+    max-height: 983px;
     border: 1px solid #DDDDDD;
-    width: 982px;
-    height: 983px;
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -1755,7 +1801,6 @@
 }
 
 .c-mainBanner1 {
-  background-color: rgba(240,240,240,.5);
   position: relative;
   min-height: 992px;
   max-height: 992px;
@@ -1767,6 +1812,7 @@
     }
   }
   &__texts1 {
+    background-color: rgba(240,240,240,.5);
     height: 352px;
     position: relative;
     overflow: hidden;
@@ -1829,8 +1875,10 @@
   }
   &__video {
     width: 100%;
-    position: relative;
-    top: -250px;
+    height: 674px;
+    object-fit: cover;
+    /* position: relative;
+    top: -250px; */
   }
 }
 
@@ -1938,6 +1986,16 @@
   background-size: cover;
   background-position: center center;
   position: relative;
+
+  .c-mainBanner2__effectBox {
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+  }
   .c-mainBanner2__effect {
     background-color: #445262;
     width: 100%;
@@ -1947,7 +2005,6 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: 1;
   }
   &__inner {
     max-height: 512px;
@@ -2249,7 +2306,7 @@
     line-height: 1.482;
   }
   &__cores {
-    width: 100%;
+    width: calc(100% - 40px);
     position: absolute;
     top: 325px;
     left: 50%;
@@ -2336,7 +2393,9 @@
     display: flex;
     justify-content: space-between;
   }
-  &__titleBox {}
+  &__titleBox {
+    min-width: 360px;
+  }
   &__title {
     font-size: 26px;
     font-weight: 700;
@@ -2354,6 +2413,7 @@
   padding-top: 52px;
   max-width: 1024px;
   width: 100%;
+  min-width: 200px;
   &__listBox {
     display: flex;
     flex-direction: column;
@@ -2413,7 +2473,7 @@
     justify-content: space-between;
   }
   &__titleBox {
-    
+    min-width: 360px;
   }
   &__title {
     font-size: 26px;

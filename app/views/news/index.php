@@ -29,7 +29,7 @@
                 <div class="c-newsListItem__contents">
                   <div class="c-newsListItem__category u-ellipsis"><?= nl2br(htmlspecialchars($item['category'])) ?></div>
                   <h3 class="c-newsListItem__title u-ellipsis"><?= htmlspecialchars($item['title']) ?></h3>
-                  <p class="c-newsListItem__desc u-ellipsis2"><?= nl2br(htmlspecialchars($item['content'])) ?></p>
+                  <div class="c-newsListItem__desc u-ellipsis2"><?= nl2br(htmlspecialchars($item['content'])) ?></div>
                   <div class="c-newsListItem__date u-ellipsis"><?= nl2br(htmlspecialchars(str_replace('-', '.', $item['date']))) ?></div>
                 </div>
               </div>

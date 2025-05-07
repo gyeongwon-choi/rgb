@@ -1,6 +1,137 @@
-@media (max-width:767px) {
-  .c-header {
+@media (max-width:1499px) {
+  .c-mainBanner1 {
+    min-height: 773px;
+    max-height: 773px;
+    &__texts1 {
+      height: 200px;
+    }
+    &__title1 {
+      font-size: 100px;
+    }
+    &__title2 {
+      font-size: 100px;
+      &::before {
+        width: 50%;
+        height: 8px;
+        top: 62px;
+      }
+    }
+    &__textsInner {
+      margin-top: -1050px;
+      &--video {
+        margin-top: -1250px;
+      }
+    }
+    &__desc {}
+    &__videoWrap {}
+    &__videoText {}
+    &__image {}
+  }
+  
+  .c-mainAbout {
     &__inner {}
+    &__about {}
+    &__title {}
+    &__desc1 {}
+    &__desc2 {}
+    &__btnDetail {}
+  
+    &__slideArea {}
+  }
+  
+  .c-mainAboutBox {
+    width: 300px;
+    min-height: 327px;
+    &__slideArea {}
+    &__imageWrap {}
+    &__image {}
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-mainBanner2 {
+    &__inner {
+      padding-left: 0;
+      justify-content: center;
+    }
+    &__left {}
+    &__right {}
+    &__title {}
+    &__logo {}
+    &__desc {}
+    &__desc1 {}
+    &__desc2 {}
+    &__desc3 {}
+  }
+  
+  .c-mainSmart {
+    &__ {}
+  }
+  
+  .c-mainSmartItem {
+    &__contents {}
+    &__title {}
+    &__desc {}
+    &__btnDetail {}
+    &__titleCol {}
+  }
+  
+  .c-mainCore {
+    &__title {}
+    &__desc {}
+    &__cores {}
+  }
+  
+  .c-mainCoreBox {
+    &__imageWrap {}
+    &__image {}
+    &__texts {}
+    &__title {}
+    &__desc {}
+    &__btnDetail {}
+  }
+  
+  .c-mainNews {
+    &__inner {}
+    &__titleBox {}
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-mainNewsList {
+    &__listBox {}
+    &__list {}
+    &__link {}
+    &__category {}
+    &__contents {}
+    &__btnWrap {}
+    &__btnDetail {}
+  }
+  
+  .c-mainBrand {
+    &__inner {}
+    &__titleBox {}
+    &__title {}
+    &__desc {}
+    &__listBox {}
+  }
+  
+  .c-mainBrandBox {
+    &__link {}
+    &__inner {}
+    &__titleBox {}
+    &__title {}
+    &__logoWrap {}
+    &__logo {}
+    &__go {}
+  }
+}
+
+@media (max-width:1023px) {
+  .c-header {
+    &__inner {
+      height: 60px;
+    }
     &__left {}
     &__logo {}
     &__languages {}
@@ -9,30 +140,53 @@
   }
   
   .c-headerNav {
+    display: none;
     &__menuBox {}
     &__menu {}
     &__menuLink {}
   }
   
   .c-footer {
-    &__inner {}
-    &__left {}
-    &__right {}
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__left {
+      padding-right: 0px;
+      max-width: none;
+      padding-bottom: 20px;
+    }
+    &__right {
+      border-left: none;
+      padding-left: 0;
+      border-top: 1px solid rgba(112, 112, 112, 0.3);
+      padding-top: 20px;
+      max-width: none;
+    }
   
     &__copyBox {}
     &__pluxity {}
     &__copy {}
     
-    &__addressBox {}
+    &__addressBox {
+      margin-top: 40px;
+    }
     &__address {}
     &__contacts {}
     &__contact {}
   
-    &__infoBox {}
+    &__infoBox {
+      margin-top: 20px;
+    }
     &__info {}
     &__infoLink {}
   
-    &__inquiryBox {}
+    &__inquiryBox {
+      align-items: center;
+      justify-content: space-between;
+    }
     &__inquiryText {}
     &__inquiryBtn {}
   
@@ -71,19 +225,557 @@
   }
   
   .c-main {
+    padding-top: 60px;
+  }
+  
+  .c-subHead {
+    padding-top: 60px;
+    &__title {
+      font-size: 100px;
+    }
+    &__desc {
+    }
+    &__ps {}
+  }
+
+  .c-form {
+    padding: 40px 20px;
+  
+    &__title {
+      font-size: 32px;
+    }
+  
+    &__rows {
+      margin-top: 45px;
+      gap: 20px;
+    }
+    &__row {
+    }
+    &__inputWrap {
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__label {
+      font-size: 18px;
+      padding-top: 0px;
+    }
+    &__required {
+    }
+    &__input {}
+    &__textarea {
+    }
+    &__btnSubmitWrap {
+    }
+    &__btnSubmit {
+     
+    }
+  }
+  
+  .c-inquiryForm {
+    margin-top: 80px;
+    margin-bottom: 160px;
+    padding: 40px 20px;
+    &__title {
+      font-size: 32px;
+    }
+    &__tabBox {
+      margin-top: 45px;
+    }
+    &__tabList {
+      width: 50%;
+    }
+    &__tabLabel {
+      font-size: 18px;
+      & > em {}
+    }
+    &__tabRadio {}
+  
+    &__rows {
+      margin-top: 45px;
+      gap: 20px;
+    }
+    &__row {
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__label {
+      font-size: 18px;
+      padding-top: 0px;
+    }
+    &__required {}
+    &__input {}
+  
+    &__checkItems {
+      padding-left: 0px;
+      margin-top: 45px;
+    }
+    &__checkList {}
+    &__checkLink {}
+    &__btnSubmitWrap {}
+    &__btnSubmit {}
+  }
+  
+  .c-newsDetail {
+    margin-top: 80px;
+    margin-bottom: 160px;
+    &__title {
+      font-size: 30px;
+      padding-top: 45px;
+    }
+    &__infoBox {}
+    &__category {}
+    &__date {}
+    
+    &__contents {
+      margin-top: 45px;
+      min-height: 600px;
+    }
+    &__links {}
+    &__linkWrap {}
+    &__link {
+      &--prev {}
+      &--next {}
+    }
+    &__linkInfo {
+      &--nothing {}
+    }
+  }
+  
+  .c-newsList {
+    margin-top: 80px;
+    margin-bottom: 160px;
+    &__listBox {}
+    .c-paging {
+      top: calc(100% + 60px);
+    }
+  }
+  
+  .c-newsListItem {
+    &__inner {
+      padding: 20px;
+      flex-direction: column;
+    }
+    &__contentWrap {
+      flex-direction: column;
+    }
+    &__thumbWrap {
+      width: 100%;
+      padding-bottom: 62.5%;
+    }
+    &__thumbImage {}
+    &__contents {
+      margin-left: 0px;
+    }
+    &__category {}
+    &__title {}
+    &__desc {}
+    &__date {}
+    &__linkWrap {}
+    &__link {}
+  }
+  
+  .c-paging {
+    &__list {
+      &--first {}
+      &--last {}
+    }
+    &__btn {
+      &--prev {}
+      &--next {}
+    }
+  }
+  
+  .c-achievementHead {
+    margin-top: 80px;
+    &__title {}
+    &__desc {
+      font-size: 30px;
+      br {
+        display: none;
+      }
+    }
+  }
+  
+  .c-achievement {
+    margin-top: 80px;
+    margin-bottom: 160px;
+    &__table {}
+    &__headTitle {}
+    &__dataCol1 {}
+    &__dataCol2 {}
+    &__dataCol3 {}
+    &__ {}
+    
+  }
+  
+  .c-achievementBtnWrap {
+    top: calc(100% + 65px);
+    &__btn {}
+  }
+  
+  .c-partners {
+    padding: 80px 0px 80px;
+    &__title {
+      font-size: 40px;
+    }
+    &__slideArea {}
+  }
+  
+  .c-aboutBanner {
+    min-height: auto;
+    &__inner {
+      padding: 160px 0px 160px;
+    }
+    &__bigLetter {
+      font-size: 100px;
+      text-indent: 0px;
+      &::before {
+        right: calc(100% + 50px);
+      }
+      &::after {
+        left: calc(100% + 50px);
+      }
+    }
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-aboutVision {
+    padding: 80px 0px 80px;
+    &__inner {
+      gap: 40px;
+    }
+    &__item {
+      padding-left: 0px;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__itemTitle {
+      position: static;
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  
+  .c-visionBox {
+    padding: 30px 20px;
+    max-width: none;
+    min-height: auto;
+    &__imageWrap {
+      width: 150px;
+      height: 150px;
+      &--vision {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &__image {}
+    &__title {
+      margin-top: 30px;
+      font-size: 30px;
+    }
+    &__desc {
+      font-size: 18px;
+    }
+  }
+  
+  .c-aboutTwin {
+    &__title {
+      font-size: 40px;
+    }
+    &__bgText {
+      font-size: 160px;
+    }
+    &__boxes {
+      flex-direction: column;
+      margin-top: 0px;
+    }
+  }
+  
+  .c-aboutTwinBox {
+    padding: 30px 20px 30px;
+    &:not(:first-of-type):before {
+      left: 50%;
+      bottom: auto;
+      top: -23px;
+      transform: translate(-50%, 0) rotate(90deg);
+    }
+    &__index {
+      font-size: 20px;
+    }
+    &__imageWrap {}
+    &__title {}
+    &__desc {
+      font-size: 18px;
+      br {
+        display: none;
+      }
+    }
+  }
+  
+  .c-aboutHistory {
+    padding-top: 280px;
+    &__bgCircle {
+      max-width: 600px;
+      max-height: 600px;
+      top: -400px;
+    }
+    &__bgLine {
+      top: 200px;
+      height: calc(100% - 200px);
+    }
+    &__inner {}
+  
+    &__1depthBox {
+      padding: 0;
+    }
+    &__1depthList {}
+    &__1depthTitleBox {}
+    &__1depthTitle {
+      font-size: 100px;
+    }
+    &__1depthdesc {
+    }
+  
+    &__2depthBox {}
+    &__2depthList {
+      &--point {}
+    }
+    &__2depthTitleBox {}
+    &__2depthTitle {}
+  
+    &__3depthBox {}
+    &__3depthList {
+      &--point {}
+      & > em {}
+      & > b {}
+    }
+  }
+  
+  .c-mainBanner1 {
+    &__texts {}
+    &__title {}
+    &__desc {}
+    &__videoWrap {}
+    &__videoText {}
+    &__image {}
+  }
+  
+  .c-mainAbout {
+    &__inner {}
+    &__about {}
+    &__title {}
+    &__desc1 {}
+    &__desc2 {}
+    &__btnDetail {}
+  
+    &__slideArea {}
+  }
+  
+  .c-mainAboutBox {
+    &__slideArea {}
+    &__imageWrap {}
+    &__image {}
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-mainBanner2 {
+    &__inner {}
+    &__left {}
+    &__right {}
+    &__title {}
+    &__logo {}
+    &__desc {}
+    &__desc1 {}
+    &__desc2 {}
+    &__desc3 {}
+  }
+  
+  .c-mainSmart {
+    &__ {}
+  }
+  
+  .c-mainSmartItem {
+    &__contents {}
+    &__title {}
+    &__desc {}
+    &__btnDetail {}
+    &__titleCol {}
+  }
+  
+  .c-mainCore {
+    &__title {}
+    &__desc {}
+    &__cores {}
+  }
+  
+  .c-mainCoreBox {
+    &__imageWrap {}
+    &__image {}
+    &__texts {}
+    &__title {}
+    &__desc {}
+    &__btnDetail {}
+  }
+  
+  .c-mainNews {
+    &__inner {}
+    &__titleBox {}
+    &__title {}
+    &__desc {}
+  }
+  
+  .c-mainNewsList {
+    &__listBox {}
+    &__list {}
+    &__link {}
+    &__category {}
+    &__contents {}
+    &__btnWrap {}
+    &__btnDetail {}
+  }
+  
+  .c-mainBrand {
+    &__inner {}
+    &__titleBox {}
+    &__title {}
+    &__desc {}
+    &__listBox {}
+  }
+  
+  .c-mainBrandBox {
+    &__link {}
+    &__inner {}
+    &__titleBox {}
+    &__title {}
+    &__logoWrap {}
+    &__logo {}
+    &__go {}
+  }
+}
+
+@media (max-width:767px) {
+  .c-header {
+    &__inner {}
+    &__left {}
+    &__logo {}
+    &__languages {}
+    &__language {}
+    &__languageLink {}
+  }
+  
+  .c-headerNav {
+    &__menuBox {}
+    &__menu {}
+    &__menuLink {}
+  }
+  
+  .c-footer {
+    &__inner {}
+    &__left {}
+    &__right {}
+  
+    &__copyBox {}
+    &__pluxity {}
+    &__copy {}
+    
+    &__addressBox {}
+    &__address {}
+    &__contacts {
+      flex-direction: column;
+      gap: 6px;
+    }
+    &__contact {
+      &:nth-of-type(even) {
+        display: none;
+      }
+    }
+  
+    &__infoBox {}
+    &__info {}
+    &__infoLink {}
+  
+    &__inquiryBox {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    &__inquiryText {}
+    &__inquiryBtn {}
+  
+    &__brandMediaHr {
+      width: 100%;
+      min-height: 1px;
+    }
+    &__brandMedia {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 20px;
+      gap: 20px;
+    }
+    &__brand {
+      max-width: 290px;
+      padding-right: 0px;
+    }
+    &__brandMediaTitle {}
+    &__brands {}
+    &__brandGolf {}
+    &__brandSafers {}
+  
+    &__media {
+      max-width: 150px;
+      padding-left: 0px;
+    }
+    &__medias {}
+    &__mediaYoutube {}
+    &__mediaLinkedIn {}
+  }
+  
+  .c-fixBtns {
+    &__list {}
+    &__btnMessage {}
+    &__btnMail {}
+    &__btnUp {}
+  }
+  
+  .c-modals {}
+  
+  .c-modal {
+    &__closeBtn {}
+    &__inner {}
+    &__title {}
+    &__desc {}
+    &__listBox {}
+    &__1depthBox {}
+    &__1depthList {}
+    &__2depthBox {}
+    &__2depthList {}
+  }
+  
+  .c-main {
   
   }
   
   .c-subHead {
-    &__title {}
-    &__desc {}
+    &__title {
+      font-size: 40px;
+    }
+    &__desc {
+      font-size: 30px;
+      & br {
+        display: none;
+      }
+    }
     &__ps {}
   }
   
   .c-inquiryForm {
     &__title {}
     &__tabBox {}
-    &__tabList {}
+    &__tabList {
+      width: 100%;
+    }
     &__tabLabel {
       & > em {}
     }
@@ -166,17 +858,61 @@
   .c-achievementBtnWrap {
     &__btn {}
   }
+
+  .c-partnersSlide {
+    &__imageWrap {
+      height: 93px;
+      padding: 20px;
+      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.16);
+    }
+    .splide {
+      height: 93px;
+    }
+    .splide__track {
+      height: 125px;
+    }
+    .splide__slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
   
   .c-partners {
     &__title {}
-    &__slideArea {}
+    &__slideArea {
+      margin-top: 60px;
+      gap: 20px;
+    }
   }
   
   .c-aboutBanner {
-    &__inner {}
-    &__bigLetter {}
-    &__title {}
-    &__desc {}
+    &::after {
+      background-attachment: local;
+    }
+    &__innerWrap {
+      align-items: center;
+    }
+    &__inner {
+      padding: 80px 0px 80px;
+    }
+    &__bigLetter {
+      font-size: 40px;
+      &::before {
+        height: 4px;
+        right: calc(100% + 25px);
+      }
+      &::after {
+        height: 4px;
+        left: calc(100% + 25px);
+      }
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__desc {
+      font-size: 18px;
+    }
   }
   
   .c-aboutVision {
@@ -193,35 +929,84 @@
   }
   
   .c-aboutTwin {
+    padding: 80px 0px 80px;
     &__title {}
-    &__boxes {}
+    &__boxes {
+      margin-top: 40px;
+      transform: none;
+    }
   }
   
   .c-aboutTwinBox {
+    min-height: 330px;
     &__index {}
-    &__imageWrap {}
+    &__imageWrap {
+      margin-top: 10px;
+      width: 80px;
+      height: 80px;
+    }
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
     &__title {}
     &__desc {}
   }
   
   .c-aboutHistory {
+    padding: 80px 0px 160px;
+    &__bgCircle {
+      display: none;
+    }
+    &__bgLine {
+      display: none;
+    }
     &__inner {}
   
-    &__1depthBox {}
-    &__1depthList {}
-    &__1depthTitleBox {}
+    &__1depthBox {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+    &__1depthList {
+      grid-template-columns: 1fr;
+    }
+    &__1depthTitleBox {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
     &__1depthTitle {}
-    &__1depthdesc {}
+    &__1depthdesc {
+      line-height: 1.4;
+      margin-top: 0px;
+      br {
+        display: none;
+      }
+    }
   
-    &__2depthBox {}
+    &__2depthBox {
+      margin-top: 40px;
+      margin-left: 0px;
+      gap: 40px;
+    }
     &__2depthList {
       &--point {}
     }
     &__2depthTitleBox {}
-    &__2depthTitle {}
+    &__2depthTitle {
+      font-size: 30px;
+    }
   
-    &__3depthBox {}
+    &__3depthBox {
+      margin-top: 20px;
+    }
     &__3depthList {
+      line-height: 1.4;
+      &::after {
+        top: 9px;
+      }
       &--point {}
       & > em {}
       & > b {}

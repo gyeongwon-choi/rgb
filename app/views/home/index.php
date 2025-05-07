@@ -145,8 +145,10 @@
 </section>
 
 <section class="c-mainBanner2">
-  <div class="c-mainBanner2__effect">
-    <div class="u-irBlock">이펙트</div>
+  <div class="c-mainBanner2__effectBox">
+    <div class="c-mainBanner2__effect">
+      <div class="u-irBlock">이펙트</div>
+    </div>
   </div>
   <div class="l-container">
     <div class="c-mainBanner2__inner">
@@ -290,19 +292,19 @@
         <ul class="c-mainNewsList__listBox">
           <li class="c-mainNewsList__list">
             <a class="c-mainNewsList__link" href="javascript:void(0);">
-              <div class="c-mainNewsList__category">News</div>
+              <div class="c-mainNewsList__category u-ellipsis">News</div>
               <p class="c-mainNewsList__contents u-ellipsis">2023.10.5 ㅣLorem ipsum dolor sit amet, consectetur ...</p>
             </a>
           </li>
           <li class="c-mainNewsList__list">
             <a class="c-mainNewsList__link" href="javascript:void(0);">
-              <div class="c-mainNewsList__category">News</div>
+              <div class="c-mainNewsList__category u-ellipsis">News</div>
               <p class="c-mainNewsList__contents u-ellipsis">2023.10.5 ㅣLorem ipsum dolor sit amet, consectetur ...</p>
             </a>
           </li>
           <li class="c-mainNewsList__list">
             <a class="c-mainNewsList__link" href="javascript:void(0);">
-              <div class="c-mainNewsList__category">News</div>
+              <div class="c-mainNewsList__category u-ellipsis">News</div>
               <p class="c-mainNewsList__contents u-ellipsis">2023.10.5 ㅣLorem ipsum dolor sit amet, consectetur ...</p>
             </a>
           </li>

@@ -30,22 +30,26 @@
             </div>
           </li>
           <li class="c-form__row">
-            <label for="news_category" class="c-form__label">
-              <span>카테고리</span>
-              <span class="c-form__required">*</span>
-            </label>
-            <select class="c-form__input" name="category" id="news_category">
-              <option value="category1">category1</option>
-              <option value="category2">category2</option>
-              <option value="category3">category3</option>
-            </select>
+            <div class="c-form__inputWrap">
+              <label for="news_category" class="c-form__label">
+                <span>카테고리</span>
+                <span class="c-form__required">*</span>
+              </label>
+              <select class="c-form__input" name="category" id="news_category">
+                <option value="category1">category1</option>
+                <option value="category2">category2</option>
+                <option value="category3">category3</option>
+              </select>
+            </div>
           </li>
           <li class="c-form__row">
-            <label for="news_content" class="c-form__label">
-              <span>내용</span>
-              <span class="c-form__required">*</span>
-            </label>
-            <textarea class="c-form__textarea" name="content" id="news_content" placeholder="문의 내용을 입력해주세요."></textarea>
+            <div class="c-form__inputWrap">
+              <label for="news_content" class="c-form__label">
+                <span>내용</span>
+                <span class="c-form__required">*</span>
+              </label>
+              <textarea class="c-form__textarea" name="content" id="news_content" placeholder="문의 내용을 입력해주세요."></textarea>
+            </div>
           </li>
         </ul>
 
@@ -58,11 +62,11 @@
     <ul class="c-newsDetail__links">
       <li class="c-newsDetail__linkWrap">
         <a href="javascript:void(0);" class="c-newsDetail__link c-newsDetail__link--prev">이전글</a>
-        <span class="c-newsDetail__linkInfo">제목제목제목</span>
+        <span class="c-newsDetail__linkInfo u-ellipsis2">제목제목제목</span>
       </li>
       <li class="c-newsDetail__linkWrap c-newsDetail__linkWrap--next">
         <a href="javascript:void(0);" class="c-newsDetail__link c-newsDetail__link--next">다음글</a>
-        <span class="c-newsDetail__linkInfo c-newsDetail__linkInfo--nothing">다음 글이 없습니다.</span>
+        <span class="c-newsDetail__linkInfo c-newsDetail__linkInfo--nothing u-ellipsis2">다음 글이 없습니다.</span>
       </li>
     </ul>
     

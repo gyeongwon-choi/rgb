@@ -35,11 +35,11 @@
     <ul class="c-newsDetail__links">
       <li class="c-newsDetail__linkWrap">
         <a href="javascript:void(0);" class="c-newsDetail__link c-newsDetail__link--prev">이전글</a>
-        <span class="c-newsDetail__linkInfo">제목제목제목</span>
+        <span class="c-newsDetail__linkInfo u-ellipsis2">제목제목제목</span>
       </li>
       <li class="c-newsDetail__linkWrap c-newsDetail__linkWrap--next">
         <a href="javascript:void(0);" class="c-newsDetail__link c-newsDetail__link--next">다음글</a>
-        <span class="c-newsDetail__linkInfo c-newsDetail__linkInfo--nothing">다음 글이 없습니다.</span>
+        <span class="c-newsDetail__linkInfo c-newsDetail__linkInfo--nothing u-ellipsis2">다음 글이 없습니다.</span>
       </li>
     </ul>
   </section>

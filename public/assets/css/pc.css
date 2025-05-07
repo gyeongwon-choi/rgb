@@ -1,6 +1,6 @@
 .c-header {
   border-bottom: 1px solid #EAEAEA;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -17,7 +17,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  max-width: 1010px;
+  width: 100%;
   height: 100%;
 }
 .c-header__logo {
@@ -78,12 +79,16 @@
 }
 
 .c-headerNav {
+  max-width: 760px;
+  width: 100%;
   height: 100%;
 }
 .c-headerNav__menuBox {
   display: flex;
   align-items: center;
-  gap: 32px;
+  width: 100%;
+  max-width: 760px;
+  justify-content: space-between;
   height: 100%;
   z-index: 1;
   position: relative;
@@ -185,6 +190,7 @@
 .c-footer__left {
   width: 100%;
   max-width: 723px;
+  padding-right: 74px;
 }
 .c-footer__right {
   width: 100%;
@@ -193,7 +199,8 @@
   border-left: 1px solid rgba(112, 112, 112, 0.3);
 }
 .c-footer__pluxity {
-  width: 309px;
+  width: 100%;
+  max-width: 309px;
   height: 48px;
   background-image: url("../images/logos/logo_pluxity.svg");
   background-size: contain;
@@ -307,9 +314,10 @@
   background-color: rgba(112, 112, 112, 0.37);
 }
 .c-footer__brand {
-  max-width: 290px;
+  max-width: 310px;
   width: 100%;
   position: relative;
+  padding-right: 20px;
 }
 .c-footer__brandMediaTitle {
   font-family: "Roboto";
@@ -323,6 +331,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 .c-footer__brandGolf {
   width: 80px;
@@ -341,14 +351,17 @@
   background-position: center center;
 }
 .c-footer__media {
-  max-width: 150px;
+  max-width: 170px;
   width: 100%;
+  padding-left: 20px;
 }
 .c-footer__medias {
   margin-top: 7px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 .c-footer__mediaYoutube {
   width: 57px;
@@ -545,8 +558,6 @@
 }
 
 .c-form {
-  margin-top: 114px;
-  margin-bottom: 376px;
   padding: 100px 133px;
   background-color: rgba(241, 241, 241, 0.5);
   border-radius: 30px;
@@ -567,6 +578,7 @@
 }
 .c-form__inputWrap {
   display: flex;
+  width: 100%;
 }
 .c-form__label {
   width: 133px;
@@ -678,6 +690,7 @@
   margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .c-inquiryForm__tabList {
   width: 33.3333%;
@@ -753,7 +766,6 @@
 }
 .c-inquiryForm__checkList {
   display: flex;
-  align-items: center;
   gap: 15px;
 }
 .c-inquiryForm__checkLabel {
@@ -855,6 +867,7 @@
   align-items: center;
 }
 .c-newsDetail__linkWrap {
+  max-width: 130px;
   display: inline-flex;
   flex-direction: column;
   gap: 13px;
@@ -967,6 +980,7 @@
   width: 100%;
   margin-left: 45px;
   padding: 19px 0px;
+  min-width: 200px;
 }
 .c-newsListItem__category {
   font-family: "Roboto";
@@ -986,9 +1000,11 @@
   color: #585858;
   line-height: 1.688;
   max-width: 575px;
+  min-height: 54px;
+  word-break: break-word;
 }
 .c-newsListItem__date {
-  margin-top: 50px;
+  margin-top: 23px;
   font-size: 16px;
   font-weight: 500;
   color: #AAAAAA;
@@ -1134,15 +1150,20 @@
   font-weight: 500;
   vertical-align: middle;
   text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .c-achievement__table thead th:nth-of-type(1) {
-  padding: 0px 30px 0px 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .c-achievement__table thead th:nth-of-type(2) {
-  padding: 0px 15px 0px 0px;
+  padding-left: 0px;
+  padding-right: 15px;
 }
 .c-achievement__table thead th:nth-of-type(3) {
-  padding: 0px 10px 0px 0px;
+  padding-left: 0px;
+  padding-right: 10px;
   text-align: center;
 }
 .c-achievement__table tbody tr {
@@ -1151,21 +1172,26 @@
 }
 .c-achievement__table tbody td {
   vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .c-achievement__table tbody td:nth-of-type(1) {
-  padding: 0px 30px 0px 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 18px;
   font-weight: 700;
   color: #000;
 }
 .c-achievement__table tbody td:nth-of-type(2) {
-  padding: 0px 15px 0px 0px;
+  padding-left: 0px;
+  padding-right: 15px;
   font-size: 16px;
   font-weight: 400;
   color: #AAAAAA;
 }
 .c-achievement__table tbody td:nth-of-type(3) {
-  padding: 0px 10px 0px 0px;
+  padding-left: 0px;
+  padding-right: 10px;
   font-size: 18px;
   font-weight: 700;
   color: #DDDDDD;
@@ -1445,9 +1471,29 @@
   position: relative;
   background-color: #111833;
   z-index: 1;
+  /* &::before {
+    content: "Digital Twin";
+    font-size: 320px;
+    font-weight: 700;
+    font-family: "Roboto";
+    color: rgba(0,110,255,0.1);
+    position: absolute;
+    top: 107px;
+    left: 50%;
+    transform: translate(-50%,0);
+    letter-spacing: -3px;
+    width: max-content;
+  } */
 }
-.c-aboutTwin::before {
-  content: "Digital Twin";
+.c-aboutTwin__bgTextWrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.c-aboutTwin__bgText {
   font-size: 320px;
   font-weight: 700;
   font-family: "Roboto";
@@ -1544,9 +1590,11 @@
   top: 0;
 }
 .c-aboutHistory__bgCircle {
+  max-width: 982px;
+  width: 100%;
+  height: 50%;
+  max-height: 983px;
   border: 1px solid #DDDDDD;
-  width: 982px;
-  height: 983px;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -1685,7 +1733,6 @@
   color: #006EFF;
 }
 .c-mainBanner1 {
-  background-color: rgba(240, 240, 240, 0.5);
   position: relative;
   min-height: 992px;
   max-height: 992px;
@@ -1698,6 +1745,7 @@
   margin-top: -760px;
 }
 .c-mainBanner1__texts1 {
+  background-color: rgba(240, 240, 240, 0.5);
   height: 352px;
   position: relative;
   overflow: hidden;
@@ -1760,8 +1808,10 @@
 }
 .c-mainBanner1__video {
   width: 100%;
-  position: relative;
-  top: -250px;
+  height: 674px;
+  object-fit: cover;
+  /* position: relative;
+  top: -250px; */
 }
 
 .c-mainAbout {
@@ -1862,6 +1912,15 @@
   background-position: center center;
   position: relative;
 }
+.c-mainBanner2 .c-mainBanner2__effectBox {
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
 .c-mainBanner2 .c-mainBanner2__effect {
   background-color: #445262;
   width: 100%;
@@ -1871,7 +1930,6 @@
   top: 0px;
   right: 0px;
   bottom: 0px;
-  z-index: 1;
 }
 .c-mainBanner2__inner {
   max-height: 512px;
@@ -2135,7 +2193,7 @@
   line-height: 1.482;
 }
 .c-mainCore__cores {
-  width: 100%;
+  width: calc(100% - 40px);
   position: absolute;
   top: 325px;
   left: 50%;
@@ -2218,6 +2276,9 @@
   display: flex;
   justify-content: space-between;
 }
+.c-mainNews__titleBox {
+  min-width: 360px;
+}
 .c-mainNews__title {
   font-size: 26px;
   font-weight: 700;
@@ -2234,6 +2295,7 @@
   padding-top: 52px;
   max-width: 1024px;
   width: 100%;
+  min-width: 200px;
 }
 .c-mainNewsList__listBox {
   display: flex;
@@ -2287,6 +2349,9 @@
 .c-mainBrand__inner {
   display: flex;
   justify-content: space-between;
+}
+.c-mainBrand__titleBox {
+  min-width: 360px;
 }
 .c-mainBrand__title {
   font-size: 26px;
